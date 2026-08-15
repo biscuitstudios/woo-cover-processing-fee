@@ -2,7 +2,7 @@
 	"name": "biscuit-studios/woo-cover-processing-fee",
 	"description": "Voluntary grossed-up processing-fee opt-in for the WooCommerce checkout.",
 	"type": "wordpress-plugin",
-	"license": "proprietary",
+	"license": "GPL-2.0-or-later",
 	"require": {
 		"php": ">=8.2"
 	},
