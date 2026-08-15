@@ -1,0 +1,39 @@
+.woo-cover-fee-box {
+	background-color: #FFF;
+	box-shadow: 0 0 12px 0 rgb(0 0 0 / 10%);
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+/* The statement can contain links, so it needs to sit as a block next to
+   the checkbox rather than wrapping under it. */
+.woo-cover-fee-box .woo-cover-fee-row label {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.woo-cover-fee-box .woo-cover-fee-row input[type="checkbox"] {
+	flex: 0 0 auto;
+	margin: 2px 0 0;
+}
+
+.woo-cover-fee-statement {
+	flex: 1 1 auto;
+}
+
+/* Links inside the statement do not toggle the checkbox (per the HTML spec,
+   label activation skips interactive descendants), so give them their own
+   affordance. */
+.woo-cover-fee-statement a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* In-flight state while the session toggle round-trips. */
+.woo-cover-fee-box.is-busy {
+	opacity: 0.6;
+	pointer-events: none;
+}
